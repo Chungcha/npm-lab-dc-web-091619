@@ -1,5 +1,8 @@
 //No need to do any work here.  If package.json and the proper modules are installed, this will
 
+window.onload = displayTime()
+
+
 function displayTime() {
   let clock = document.querySelector('#clock')
   clock.innerText = moment().format('MMMM Do YYYY, h:mm:ss a')
@@ -11,5 +14,3 @@ function displayTime() {
 
 
 }
-
-window.onload = displayTime()
